@@ -1,4 +1,4 @@
-import prisma from "database";
+import prisma from "../src/database";
 
 async function checkOrCreateDefaultUser() {
     return await prisma.customer.upsert({
